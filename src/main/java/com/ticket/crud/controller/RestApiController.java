@@ -20,7 +20,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping
 public class RestApiController {
 
 	public static final Logger logger = LoggerFactory.getLogger(RestApiController.class);
@@ -90,6 +90,7 @@ public class RestApiController {
 		currentTicket.setCost(ticket.getCost());
 		currentTicket.setDescription(ticket.getDescription());
 		currentTicket.setDate(ticket.getDate());
+		currentTicket.setStatus(ticket.getStatus());
 
 		ticketService.updateTicket(currentTicket);
 		return new ResponseEntity<Ticket>(currentTicket, HttpStatus.OK);

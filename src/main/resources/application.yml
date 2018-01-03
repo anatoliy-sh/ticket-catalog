@@ -6,7 +6,7 @@ datasource:
   sampleapp:
     url: jdbc:postgresql://localhost:5432/tickets
     username: postgres
-    password: hdty389ktol
+    password: postgres
     driverClassName: org.postgresql.Driver
     defaultSchema:
     maxPoolSize: 20

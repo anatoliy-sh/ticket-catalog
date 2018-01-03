@@ -14,23 +14,19 @@ public class Ticket implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotEmpty
-    @Column(name = "NAME", nullable = false)
+    @Column(name = "NAME")
     private String name;
 
-    @NotEmpty
-    @Column(name = "DESCRIPTION", nullable = false)
+    @Column(name = "DESCRIPTION")
     private String description;
 
-    @NotEmpty
-    @Column(name = "DATE", nullable = false)
+    @Column(name = "DATE")
     private Date date;
 
-    @NotEmpty
-    @Column(name = "COST", nullable = false)
+    @Column(name = "COST")
     private Double cost;
 
-    @Column(name = "STATUS", nullable = false)
+    @Column(name = "STATUS")
     private String status;
 
     public Long getId() {
